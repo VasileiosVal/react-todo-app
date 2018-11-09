@@ -4,7 +4,6 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
-    "@babel/cli": "^7.0.0",
     "@babel/core": "^7.0.0",
     "@babel/plugin-proposal-object-rest-spread": "^7.0.0",
     "@babel/preset-env": "^7.0.0",
@@ -13,7 +12,6 @@
     "css-loader": "^1.0.1",
     "express": "^4.16.4",
     "install": "^0.12.2",
-    "live-server": "^1.2.0",
     "moment": "^2.22.2",
     "node-sass": "^4.9.4",
     "npm": "^6.4.1",
@@ -27,20 +25,15 @@
     "style-loader": "^0.23.1",
     "uuid": "^3.3.2",
     "webpack": "^4.23.1",
-    "webpack-cli": "^3.1.2",
-    "webpack-dev-server": "^3.1.10"
+    "webpack-cli": "^3.1.2"
   },
   "devDependencies": {},
   "scripts": {
     "start": "node server/server.js",
     "heroku-postbuild": "npm run production",
-    "live": "live-server ./public",
-    "babel": "babel src/scripts/app.js --out-file=public/scripts/app.js --presets=env,react",
-    "babel-watch": "babel src/scripts/app.js --out-file=public/scripts/app.js --presets=env,react --watch",
     "webpack": "webpack --mode=development",
     "production": "webpack --mode=production",
-    "watch": "webpack --mode=development --watch",
-    "server": "webpack-dev-server --mode=development"
+    "watch": "webpack --mode=development --watch"
   },
   "author": "",
   "license": "ISC"

@@ -21,9 +21,6 @@ module.exports = {
             ]
         }]
     },
-    devtool: 'source-map',    // devtool: 'cheap-module-eval-source-map',    //devtool: 'source-map',         gia production
-    devServer: {
-        contentBase: path.join(__dirname, 'public'),
-        historyApiFallback: true
-    }
+    devtool: 'source-map'    // devtool: 'cheap-module-eval-source-map',    //devtool: 'source-map',         gia production
+
 }; 
